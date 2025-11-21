@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Examples:</title>
+    </head>
+    <body>
+        <div id="output"></div>
+
+        <script type="text/javascript">
+            const outputMsg = document.getElementById('output');
+
+            let greeting = "";
+            let hour = 20;
+
+            if(hour < 12) {
+                greeting = "Good morning";
+            } else if(hour > 12 && hour < 18) {
+                greeting = "Good afternoon";
+            } else {
+                greeting = "Good evening";
+            }
+
+            outputMsg.textContent = greeting;
+        </script>
+    </body>
+</html>
