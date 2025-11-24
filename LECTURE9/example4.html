@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Examples:</title>
+    </head>
+    <body>
+        <div id="output"></div>
+
+        <script type="text/javascript">
+            const outputMsg = document.getElementById('output');
+
+            let isAdult = true;
+            let hasPermission = false;
+            let isGuest = true;
+
+            if( (isAdult && hasPermission) || isGuest ) {
+                outputMsg.textContent = "Access granted.";
+            } else {
+                outputMsg.textContent = "Access denied.";
+            }
+        </script>
+    </body>
+</html>

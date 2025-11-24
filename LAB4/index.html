@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learn CSS with Me</title>
+        <titale>Learn CSS with Me</titale>
+        <style type="text/css">
+            body
+            {
+                background-color: #dddddd;
+                Font-family: Arial, Helvetica, sans-serif;
+                background-image: url("img/bg.png");
+                background-repeat: no-repeat;
+                background-position: center; 
+            }
+            .heder-blue
+            {
+                /* Overrid default heading font size*/
+                font-size: 18pt;
+                color: blue;
+            }
+            .heading
+            {
+                font-size: 26pt;
+                /* Block Text */
+                font-weight: 600;
+                /* Force asingle line break. */
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .sub-heading
+            {
+                font-size: 23pt;
+                font-size: 600;
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <hi>Formatting Content with CSS</hi>
+            
+            We will explore how to use CSS to manipulate how content is displayed.
+
+        </header>
+
+        <main>
+            <section>
+                <h2 class="heading-blue">Custom Headings:</h2>
+                
+                <!-- Span tags don't have any defult formatting. -->
+                 <span class="heading">This would be a heading 1 tag.</span>
+
+                    <span class="sub-heading">This would be a heading 2 tag.</span>
+            </section>
+
+            <section>
+                <h2 class="heading-blue">Cascading Styles:</h2>
+
+                <p Class="italics">
+                    <span class="sub-heading">Nestad span tag will be italized too!</span>
+                    "A computer would deserve to be called <span class="bold-text">intelligent</span>
+                    if it coul deceive a human into believing that it was human."
+                    <br>
+                    <br>
+                    Alan Turing
+                </p>
+            </section>
+
+            <section>
+
+        <h2 class="heading-blue">Formatting Tables:</h2>
+
+        This table will have an outside border and cell Borders.
+
+        <table id="table-with-bordr">
+            <tr>
+                <th>Mondey</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+            </tr>
+        </table>
+        
+        This table won't Have An outsider but the cells will along wilth padding.
+        <br>
+        <br>
+
+        <table id="table-with-padding">
+            <tr>
+                <!-- Inline formatting -->
+                <td style="background-color: #ffffff;">January</td>
+                <td style="background-color: #ffffff;">February</td>
+                <td style="background-color: #ffffff;">March</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>May</td>
+                <td>June</td>
+            </tr>
+            <p>
+                Hello World!
+            </p>    
+        </table>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Examples:</title>
+    </head>
+    <body>
+        <div id="output"></div>
+
+        <script type="text/javascript">
+            const outputMsg = document.getElementById('output');
+            // Set value to less than 18 and hasID is true
+            // Set value to 18 and hasID is true
+            let age = 18;
+            // Set value to false and make age greater than 18
+            let hasID = true;
+
+            if (age >= 18 && hasID) {
+                outputMsg.textContent = "You are allowed to enter.";
+            } else {
+                outputMsg.textContent = "You are not allowed to enter.";
+            }
+        </script>
+    </body>
+</html>

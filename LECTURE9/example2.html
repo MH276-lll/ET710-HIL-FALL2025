@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Examples:</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script type="text/javascript">
+               const outputMsg = document.getElementById('output');
+               
+               let isWeekend = true;
+               let isHoliday = false;
+
+               if (isWeekend || isHoliday) {
+                   outputMsg.textContent = "You can relax today.";
+               } else {
+                   outputMsg.textContent = "It's a working day.";
+               }
+        </script>
+    </body>
+</html>
