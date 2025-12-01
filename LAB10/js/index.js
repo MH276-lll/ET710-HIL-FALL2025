@@ -16,6 +16,7 @@ function displayContacts() {
         let textAsArray = [
             contact.firstName,
             contact, lastName,
+            contact, phone,
             contact.email,
             '<button class="btn btn-danger btn-sm" onclick="deleteContact(' + index + ')">Delete</button>'
     ];
