@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <div>
+        First Name:
+        <div style="margin-top: 10px;">
+            <input type="text" id="firstName">
+        </div>
+    </div>
+
+    <div>
+        Last Name:
+        <div style="margin-top: 10px;">
+            <input type="text" id="lastName">
+        </div>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <button onclick="app.updateText()">update</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script type="text/javascript">
+
+        class User {
+            constructor(outputID) {
+                this.output = document.getElementById(outputID);
+                this.content = "";
+            }
+
+            display() {
+                this.output.innerHTML = this.content;
+            }
+
+            setText(firstName, lastName) {
+                this.content = '<div style="margin-top: 10px">';
+                this.content += 'First Name: ' + firstName;
+                this.content += '<br>';
+                this.content += 'Last Name: ' + lastName;
+                this.content += '</div>';
+            }
+
+            updateText() {
+                const firstName = document.getElementById("firstName").value;
+                const lastName = document.getElementById("lastName").value;
+
+                this.setText(firstName, lastName);
+                this.display(); 
+            }
+        }
+
+        const app = new User("output");
+
+        //app.setText("John", "Doe");
+        //app.display();
+    </script>
+
+</body>
+</html>
