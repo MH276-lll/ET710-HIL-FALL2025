@@ -1,0 +1,7 @@
+html{
+    font-family: Arial; /* chage the family globally */
+}
+
+button{
+    height: 50px;
+}
