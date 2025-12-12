@@ -1,34 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>JavaScript Functions Examples</title>
-</head>
-<body>
-    <h1>JavaScript Functions Examples</h1>
-    <script type="text/javascript">
+<div id="results"></div>
 
-        function subtract(num1, num2) {
-            return num1 - num2;
-        }
-        function divide(num1, num2) {
-            return num1 / num2;
-        }
-        function multiply(num1, num2) {
-            return num1 * num2;
-        }
+<script>
+    const resultsDiv = document.getElementById("results");
 
-        let first_number = 10;
-        let second_number = 15;
+    function subtract(num1, num2) {
+        return num1 - num2;
+    }
+    function divide(num1, num2) {
+        return num1 / num2;
+    }
+    function multiply(num1, num2) {
+        return num1 * num2;
+    }
 
-        let total = subtract(first_number, second_number);
-        document.write(total + "<br>");
+    const first_number = 10;
+    const second_number = 15;
 
-        total = divide(first_number, second_number);
-        document.write(total + "<br>");
+    const results = [
+        subtract(first_number, second_number),
+        divide(first_number, second_number),
+        multiply(first_number, second_number)
+    ];
 
-        total = multiply(first_number, second_number);
-        document.write(total + "<br>");
-
-    </script>
-</body>
-</html>
+    results.forEach(result => {
+        const p = document.createElement("p");
+        p.textContent = result;
+        resultsDiv.appendChild(p);
+    });
+</script>
