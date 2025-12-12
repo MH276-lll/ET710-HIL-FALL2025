@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Loops Examples:</title>
+        <script type="text/javascript">
+            function changePage(src) {
+                document.getElementById("myIframe").src = src;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Loops Examples:</h1>
+        <ul>
+            <li>
+                <a href="#" onclick="changePage('example1.html')">For Loop</a>
+            </li>
+            <li>
+                <a href="#" onclick="changePage('example2.html')">While Loop</a>
+            </li>
+            <li>
+                <a href="#" onclick="changePage('example3.html')"">Do While</a>
+            </li>
+            <li>
+                <a href="#" onclick="changePage('example4.html')"">Break Statement</a>
+            </li>
+            <li>
+                <a href="#" onclick="changePage('example5.html')"">Continue Statement</a>
+            </li>
+        </ul>
+
+        <iframe id="myIframe" src="example1.html" height="600" width="100%"></iframe>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Loops Examples:</title>
+    </head>
+    <body>
+        <h2>While Loop Example</h2>
+        <form id="exampleForm" name="exampleForm">
+            <div>
+                Run To: <input type="text" id="runTo" name="runTo" width="15">
+            </div>
+            <div style="margin-top:10px;">
+                <button type="submit" id="btnSubmit">Submit >></button>
+            </div>
+        </form>
+        <div style="margin-top: 10px;" id="output1"></div>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!-- Add your script tag here -->
+         <script type="text/javascript">
+            function run() {
+                const runTo = myForm.elements["runTo"].value;
+                let count = 0;
+                let text = "";
+                // Keep looping while count is less than the number the user entered
+                while(count < runTo) {
+                text += "Current Count: " + count + "<br>";
+                count++;
+                }
+                display(text);  
+            }
+
+            function display(message) {
+                document.getElementById("output1").innerHTML = message;
+            }
+
+            document.getElementById("exampleForm").addEventListener("submit", function(e) {
+                e.preventDefault(); // Prevent page refresh
+                run();
+            });
+        </script>
+    </body>
+</html>
+

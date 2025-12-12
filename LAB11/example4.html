@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Loops Examples:</title>
+    </head>
+    <body>
+        <h2>Break Statement Example</h2>
+        <form id="exampleForm" name="exampleForm">
+            <div>
+                Run To: <input type="text" id="runTo" name="runTo" width="15">
+            </div>
+            <div style="margin-top: 10px;">
+                Break At: <input type="text" name="breakAt" width="15">
+            </div>
+            <div style="margin-top:10px;">
+                <button type="submit" id="btnSubmit">Submit >></button>
+            </div>
+        </form>
+        <div style="margin-top: 10px;" id="output1"></div>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!-- Add your script tag here -->
+        <script type="text/javascript">
+            function run() {
+                const runTo = myForm.elements ["runTo"].value;
+                const breakAt = myForm.elements ["breakAt"].value;
+                let text = "";
+                for(let i= 0; i < runTo; i++) {
+                if(i== breakAt) {
+                break;
+                }
+                text += "This number is" + i + "<br>";
+                }
+                display(text);
+            }
+        </script>
+    </body>
+</html>
+

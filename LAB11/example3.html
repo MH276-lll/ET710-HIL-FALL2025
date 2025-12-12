@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Loops Examples:</title>
+    </head>
+    <body>
+        <h2>Do While Loop Example</h2>
+        <form id="exampleForm" name="exampleForm">
+            <div>
+                Run To: <input type="text" id="runTo" name="runTo" width="15">
+            </div>
+            <div style="margin-top:10px;">
+                <button type="submit" id="btnSubmit">Submit >></button>
+            </div>
+        </form>
+        <div style="margin-top: 10px;" id="output1"></div>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!-- Add your script tag here -->
+        <script type="text/javascript">
+            function run() {
+                const runTo = myForm.elements ["runTo"].value;
+                let count = 0;
+                let text = "";
+                // Post tested. Keep looping while count is less than the entered.
+                // Important Note: This loop will always run once.
+                do {
+                text += "Current Count: " + count + "<br>";
+                count++;
+                } while(count < runTo);
+                display(text);
+            }
+        </script>
+    </body>
+</html>
+

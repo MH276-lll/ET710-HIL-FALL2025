@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Loops Examples</title>
+</head>
+<body>
+    <h2>For Loop Example</h2>
+    <form id="exampleForm" name="exampleForm">
+        <div>
+            Run To: <input type="text" id="runTo" name="runTo" width="15">
+        </div>
+        <div style="margin-top:10px;">
+            <button type="submit" id="btnSubmit">Submit >></button>
+        </div>
+    </form>
+    <div style="margin-top: 10px;" id="output1"></div>
+
+    <script type="text/javascript">
+        function run() {
+            const runTo = document.getElementById("exampleForm").elements["runTo"].value;
+            let text = "";
+
+            for (let i = 0; i < runTo; i++) {
+                text += "This number is " + i + "<br>";
+            }
+
+            document.getElementById("output1").innerHTML = text;
+        }
+
+        document.getElementById("exampleForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent page refresh
+            run();
+        });
+    </script>
+</body>
+</html>
+
+
